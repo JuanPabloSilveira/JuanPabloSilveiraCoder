@@ -1,0 +1,141 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  
+}
+
+/*Header*/
+
+.header{
+    background-color: #ffde59;
+    
+}
+
+.header__logo--img{
+    width: 140px;
+   
+}
+.menu__nav{
+    background-color: #ffde59;
+    display: flex;
+    flex-direction: row-reverse;
+
+ 
+ 
+}
+.menu__ul{
+    display: flex;
+    flex-direction: rows;
+    gap: 50px;
+    padding: 0.2rem 5rem;
+    list-style: none;
+    
+
+}
+.menu__li{
+
+}
+.menu__anchor{
+    text-decoration: none;
+}
+/*Main*/
+.main{
+    background-color: #ffde59;
+    
+}
+.banner__imagen{
+    width: 100%;
+
+  
+}
+.banner__subtitulo{
+
+    display: flex;
+   
+
+    
+
+}
+.pago{
+
+}
+.pago__titulo{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.pago__items{   
+    display:flex;
+    justify-content: center;
+}
+
+.pago__img{
+    width: 50px;
+    
+}
+/*Footer*/
+.footer{
+    background-color: #ffde59;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.Social__ul{
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+    padding: 2rem;
+    width: 70%;
+align-items: flex-end;
+}
+
+.Social__anchor--img{
+    display:flex;
+    width: 50px;
+    list-style: none;
+   
+}
+
+.Direccion{
+    width: 30%;
+}
+
+/*Media Queries - Estilos moviles*/
+
+@media screen and ( max-width: 1024px ) { /*desktop*/
+    
+}
+
+@media screen and ( max-width: 768px ) { /*tablet*/
+    
+}
+@media screen and ( max-width: 425px ) { /*movil*/
+    .menu__ul{
+        display: flex;
+        flex-direction: rows;
+        gap: 10px;
+        padding: 1rem 3rem;
+        list-style: none;
+        
+    
+    }
+
+    .Social__ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 1rem;
+      
+    
+}
+.Direccion{
+    width: 80%;
+  
+}
+
+
+/*max-width: hasta
+min-widrh: desde */
