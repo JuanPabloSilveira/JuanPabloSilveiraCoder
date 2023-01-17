@@ -1,48 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+ <!--ESTILOS DE BS--> 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--ESTILOS DE AOS--> 
+    <script src="./js/app.js" defer></script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don Pocho</title>
+    <!--font awesome--> 
+   <script src="https://kit.fontawesome.com/d96bc9efed.js" crossorigin="anonymous"></script>
+   <!--Animate css--> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
     <link rel="icon" type="image/jpg" href="./img/LogoDonPocho5.jpg">
     <link rel="stylesheet" href="./CSS/estilos.css">
+    <!--ESTILOS DE CSS--> 
  </head>
  <body>
  <header class="header">
-   <Div class="header__logo">
-
-     <a href="./index.html" ><img class="header__logo--img" src="./img/LogoDonPocho4.png" alt="Don Pocho" > </a>
-
-   </Div>     
-  <nav class="menu__nav">
-    <ul class="menu__ul">
-        <li class="menu__li">
-            <a class="menu__anchor" href="./vistas/tienda.html">TIENDA</a>
-        </li>
-        <li class="menu__li">
-            <a class="menu__anchor" href="./vistas/cotizar.html">COTIZAR</a>
-        </li>
-        <li class="menu__li">
-            <a class="menu__anchor" href="./vistas/nosotros.html">NOSOTROS</a>
-        </li>
-        <li class="menu__li">
-            <a class="menu__anchor" href="./vistas/contacto.html">CONTACTO</a>
-        </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg style="background-color: #e3f2fd;">
+    
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img class="header__logo--img"  src="./img/LogoDonPocho4.png" alt="Don Pocho" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active animate__heartBeat" aria-current="page" href="./vistas/tienda.html">TIENDA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./vistas/cotizar.html">COTIZAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./vistas/nosotros.html">NOSOTROS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./vistas/contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
+  
  </header>
  <main class="main">
     <div class="banner">
         <Section>
-           <img class="banner__imagen" src="./img/BannerChicaLentes.png" alt="Catalogo Canastas Navideñas 2022 ">
+           <img class="banner__imagen" src="./img/BannerChicaLentes.png" alt="Catalogo Canastas Navideñas 2022">
         </Section> 
     </div>
     <div class="banner__subtitulo">
-        <h1>REGALA LAS MEJORES CANASTAS NAVIDEÑAS!!!</h1>
+        <h1 class="animate__heartBeat">REGALA LAS MEJORES CANASTAS NAVIDEÑAS!!!</h1>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/Carrusel_0.jpg"" class="d-block w-100" alt="Felices Fiestas">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Carrusel_1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Carrusel_2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/Carrusel_3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
     <section class="pago">
@@ -97,6 +144,7 @@
   <script>
     AOS.init();
   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
  </body>
 
 

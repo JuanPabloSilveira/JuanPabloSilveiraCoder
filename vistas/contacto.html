@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--ESTILOS DE BS--> 
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!--ESTILOS DE AOS--> 
+       <script src="./js/app.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
+   <!--font awesome--> 
+   <script src="https://kit.fontawesome.com/d96bc9efed.js" crossorigin="anonymous"></script>
+ <!--Animate css--> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="icon" type="image/jpg" href="../img/LogoDonPocho5.jpg">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
-<body>
+<body class="body__contacto">
     <header class="header">
-        <Div class="header__logo">
-
-            <a href="../index.html" ><img class="header__logo--img" src="../img/LogoDonPocho4.png" alt="Don Pocho" > </a>
+        <nav class="navbar navbar-expand-lg style="background-color: #e3f2fd;">
           
-          </Div>     
-            
-        <nav class="menu__nav">
-            <ul class="menu__ul">
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./tienda.html">TIENDA</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="header__logo--img" src="../img/LogoDonPocho4.png" alt="Don Pocho" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./tienda.html">TIENDA</a>
                 </li>
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./cotizar.html">COTIZAR</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cotizar.html">COTIZAR</a>
                 </li>
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./nosotros.html">NOSOTROS</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                 </li>
-                <li class="menu__li">
-                  <a class="menu__anchor" href="./contacto.html">CONTACTO</a>
-              </li>
-            </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        </header>
-<main>
+        
+       </header>
+<main class="main__contacto">
   <form action="#" enctype="multipart/form-data" method="GET"> 
             
-   <fieldset>
-    <legend>Comunicate con Nosotros</legend>
-            
+   <Div class=" animate__heartBeat">
+    <h2 class="animate__wobble">Comunicate Con Nosotros</h2>
+   </Div>
+   
         <div>
             <label for="name">Nombre</label>
-            <input type="text" name="name" id="name" required>
+            <input type="text" name="name" id="name" required class="main__contacto--inp">
         </div>
         <div>
              <label for="Email">Email</label>
-             <input type="email" name="email" id="email" required>
+             <input type="email" name="email" id="email" required class="main__contacto--inp">
         </div>
         <div>
              <label for="telefono">telefono</label>
-             <input type="tel">
+             <input type="tel" class="main__contacto--inp">
         </div>       
         <div>
             <label for="Ciudad">Ciudad</label>
-            <select name="Ciudad" id="Ciudad">
+            <select name="Ciudad" id="Ciudad" class="main__contacto--inp">
             <option value="Montevideo">Montevideo</option>
-            <option value="Interior">Interior</option>   
+            <option value="Artigas">Artigas</option>   
+            <option value="Canelones">Canelones</option>
+            <option value="Cerro Largo">Cerro Largo</option>  
+            <option value="Colonia">Colonia</option>  
+            <option value="Durazno">Durazno</option>  
+            <option value="Flores">Flores</option>  
+            <option value="Florida">Florida</option>  
+            <option value="Lavalleja">Lavalleja</option>  
+            <option value="Maldonado">Montevideo</option>  
+            <option value="Paysandu">Paysandu</option>  
+            <option value="Rio Negro">Rio Negro</option>   
+            <option value="Rivera">Rivera</option>  
+            <option value="Rocha">Rocha</option>   
+            <option value="Salto">Salto</option>  
+            <option value="San Jose">San Jose</option>
+            <option value="Soriano">Soriano</option>  
+            <option value="Tacuarembo">Tacuarembo</option>  
+            <option value="Treinta y Tres">Treinta y Tres</option>    
           </select> 
         </div>
         <div>
             <Label>Asunto</Label>
-            <input type="text" name="asunto" id="text">
+            <input type="text" name="asunto" id="text" class="main__contacto--inp">
 
         </div>   
-        
         <div>
-          <input type="submit" value="Enviar">
+            <Label>Mensaje</Label>
+            <textarea name="Mensaje"  cols="30" rows="3" class="main__contacto--inp"></textarea>
+
+        </div>   
+        <div>
+          <input type="submit" value="Enviar" class="main__contacto--btn">
         </div>
-  </fieldset>
+
+    </Div>
+    
+  </div>
  </form>
+ <div class=" animate__heartBeat">
+    <a href="../index.html" ><img class="main__contacto--logo" src="../img/LogoDonPocho4.png" alt="Don Pocho" > </a>
+</div>
 </main>
          <footer class="footer">    
 
@@ -93,6 +136,11 @@
           </div>
           
           
-          </footer>         
+          </footer>   
+          <script>
+            AOS.init();
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      
 </body>
 </html>

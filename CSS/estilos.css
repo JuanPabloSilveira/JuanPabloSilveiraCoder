@@ -14,8 +14,19 @@
 
 .header__logo--img{
     width: 140px;
-   
+ 
 }
+
+.navbar{
+display: flex;
+
+
+}
+.nav-item{
+display: flex;
+justify-content: flex-end;
+}
+
 .menu__nav{
     background-color: #ffde59;
     display: flex;
@@ -33,11 +44,10 @@
     
 
 }
-.menu__li{
 
-}
 .menu__anchor{
     text-decoration: none;
+    color: black;
 }
 /*Main*/
 .main{
@@ -52,14 +62,14 @@
 .banner__subtitulo{
 
     display: flex;
-   
+   justify-content: center;
 
     
 
 }
-.pago{
+ 
 
-}
+
 .pago__titulo{
     display: flex;
     justify-content: center;
@@ -75,11 +85,69 @@
     width: 50px;
     
 }
+
+/* Main Tienda*/
+
+.main__tienda{ 
+    display: grid;
+    grid-template-columns: 50% 30%;
+    justify-content: space-around;
+    
+
+}
+
+.canasta__img{
+    width: 500px;
+    height: 500px;
+}
+.canasta__descripcion--titulo{
+    
+    list-style: none;
+
+}
+.canasta__descripcion--li{
+    list-style: none;
+}
+
+/*Main Contacto*/
+.main__contacto{
+    padding: 1.5em;
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin: 6rem;
+    max-width: 800px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%
+
+}
+
+.main__contacto--inp{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+}
+.main__contacto--btn{
+    background: tomato;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.7em;
+    width: 100%;
+
+
+}
+
+.main__contacto--logo{
+    width: 20rem;
+}
 /*Footer*/
 .footer{
     background-color: #ffde59;
     display: flex;
     justify-content: space-between;
+   padding: 0.5rem;
     
 }
 
@@ -111,8 +179,21 @@ align-items: flex-end;
 
 @media screen and ( max-width: 768px ) { /*tablet*/
     
+    /*Main Contacto*/
+.main__contacto{
+    padding: 1.5em;
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin: 1rem;
+    max-width: 800px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 80 20;
+    
+
+}
 }
 @media screen and ( max-width: 425px ) { /*movil*/
+  /*Index*/
     .menu__ul{
         display: flex;
         flex-direction: rows;
@@ -136,6 +217,35 @@ align-items: flex-end;
   
 }
 
+/*Tienda*/
+.main__tienda{ 
+    display: grid;
+    grid-template-columns:auto;
+    justify-content: stretch;
+    
 
+}
+
+.canasta__img{
+    width: 300px;
+    height: 300px;
+}
+
+.canasta__descripcion--li{
+    list-style: none;
+}
+
+/*Main Contacto*/
+.main__contacto{
+    padding: 1.5em;
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin: 1rem;
+    max-width: 800px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
 /*max-width: hasta
-min-widrh: desde */
+min-width: desde*/

@@ -1,87 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--ESTILOS DE BS--> 
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!--ESTILOS DE AOS--> 
+       <script src="../js/app.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA</title>
+    <!--font awesome--> 
+   <script src="https://kit.fontawesome.com/d96bc9efed.js" crossorigin="anonymous"></script>
+   <!--Animate css--> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
     <link rel="icon" type="image/jpg" href="../img/LogoDonPocho5.jpg">
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
 <body>
     <header class="header">
-        <Div class="header__logo">
-
-            <a href="../index.html" ><img class="header__logo--img" src="../img/LogoDonPocho4.png" alt="Don Pocho" > </a>
+        <nav class="navbar navbar-expand-lg style="background-color: #e3f2fd;">
           
-          </Div>     
-            
-        <nav class="menu__nav">
-            <ul class="menu__ul">
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./tienda.html">TIENDA</a>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="header__logo--img" src="../img/LogoDonPocho4.png" alt="Don Pocho" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./tienda.html">TIENDA</a>
                 </li>
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./cotizar.html">COTIZAR</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cotizar.html">COTIZAR</a>
                 </li>
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./nosotros.html">NOSOTROS</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
                 </li>
-                <li class="menu__li">
-                    <a class="menu__anchor" href="./contacto.html">CONTACTO</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
                 </li>
-                
-            </ul>
+              </ul>
+            </div>
+          </div>
         </nav>
-</header>
+        
+       </header>
     <main class="main__tienda">
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-enero.jpg" alt="Enero">
-             <P class="canasta__p">Enero</P>     
+            <img class="canasta__img" src="../img/canasta-enero.jpg" alt="Enero" >  
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >ENERO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Sidra La Gigonesa 950cc</p>
+                <p class="canasta__descripcion--p">Pan Dulce Portezuelo 400g</p>
+                <p class="canasta__descripcion--p">Budin con frutas Portezuelo 200g</p>
+                <p class="canasta__descripcion--p">Turron Lider blando mani 70g</p>
+                <p class="canasta__descripcion--p">Turron Lider blando chocolate 70g</p>
+                <p class="canasta__descripcion--p"> Papas fritas Lays 150g</p>
+                <p class="canasta__descripcion--p">Snack Croco palitos 80g</p>
+                <p class="canasta__descripcion--p">Mani japones Manix 100g</p>
+            </li>
         </div>
         <div class="canasta">
             <img class="canasta__img" src="../img/canasta-febrero.jpg" alt="Febrero">
-             <P class="canasta__p">Febrero</P>     
+   
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >FEBRERO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">2 Chandon Extra Brut 187cc</p>
+                <p class="canasta__descripcion--p">2 chocolate Kit Kat 42g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas de pimiento Loreto 85g</p>
+                <p class="canasta__descripcion--p">Papas fritas Pringles 37g</p>
+                <p class="canasta__descripcion--p">Mani pelado Manix 50g</p>
+                <p class="canasta__descripcion--p"> Snack Croco Maxibrezel 100g</p>
+            </li>
         </div>
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-marzo.jpg" alt="Marzo">
-             <P class="canasta__p">Marzo</P>     
+            <img class="canasta__img" src="../img/canasta-marzo.jpg" alt="Marzo">  
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >MARZO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Vino tinto Malbec Trapiche 750cc</p>
+                <p class="canasta__descripcion--p">Vermouth Martini bianco 1L</p>
+                <p class="canasta__descripcion--p">Vino tinto Pedregal cavernet 750cc</p>
+                <p class="canasta__descripcion--p">Turron blando IL Genovese 100g</p>
+                <p class="canasta__descripcion--p">Aceitunaz con carozo Emigrante 100g</p>
+                <p class="canasta__descripcion--p">Mani salado Santa Helena 200g</p>
+            </li>
         </div>
         <div class="canasta">
             <img class="canasta__img" src="../img/canasta-abril.jpg" alt="Abril">
-             <P class="canasta__p">Abril</P>     
+              
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >ABRIL</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Vino tinto tannat reserve Toscanini 750cc</p>
+                <p class="canasta__descripcion--p">Longaniza sin piel Sarubbi 250g</p>
+                <p class="canasta__descripcion--p">Jamon Bodega España 100 g</p>
+                <p class="canasta__descripcion--p">Queso parmesano Campo Di Nona 220g</p>
+                <p class="canasta__descripcion--p">Queso petit  gruyere Granja Naturalia 270g </p> 
+                <p class="canasta__descripcion--p"> Mani frito salado Rio De La Plata 180g</p>
+                <p class="canasta__descripcion--p">Tostadas clasicas El Trigal 120g</p>
+                <p class="canasta__descripcion--p">Snack Croco maxi brezel 100g </p>
+                <p class="canasta__descripcion--p">Salame finceta sin piel Sarubbi 250g </p>
+            </li>
         </div>
         <div class="canasta">
             <img class="canasta__img" src="../img/canasta-mayo.jpg" alt="Mayo">
-             <P class="canasta__p">Mayo</P>     
+        
         </div>
-        <div class="canasta">
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >MAYO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Numm extra brut 750cc</p>
+                <p class="canasta__descripcion--p">Vino tinto blend selection Brisas Del Este 750cc</p>
+                <p class="canasta__descripcion--p">Budin de frutas Portezuelo 200g</p>
+                <p class="canasta__descripcion--p">Turron blando bañado IL Genovese 100g</p>
+                <p class="canasta__descripcion--p">Turron blando almendras IL Genovese 150g</p> 
+                <p class="canasta__descripcion--p">Castañas de caju sin sal Rio De La Plata 150g</p>
+                <p class="canasta__descripcion--p">Snack Croco palitos 80 g </p>
+            </li>
+        </div>
+        <div class="canasta" >
             <img class="canasta__img" src="../img/canasta-junio.jpg" alt="Junio">
-             <P class="canasta__p">Junio</P>     
+             
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >JUNIO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Whisky Jameson 750cc</p>
+                <p class="canasta__descripcion--p">Numm extra brut 750cc</p>
+                <p class="canasta__descripcion--p">Pan dulce Firenze 600g</p>
+                <p class="canasta__descripcion--p">Turron español Memorable duro 150g</p>
+                <p class="canasta__descripcion--p">Bombonera Garoto surtida 150g</p> 
+                <p class="canasta__descripcion--p">Nueces peladas Rio De La Plata 100g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas con pimiento Loreto 85g </p>
+                <p class="canasta__descripcion--p">Mani con sal jumbo Ultje 200g</p>
+                <p class="canasta__descripcion--p">Papas fritas Lays 163g </p>
+                
+            </li>
         </div>
         <div class="canasta">
             <img class="canasta__img" src="../img/canasta-julio.jpg" alt="Julio">
-             <P class="canasta__p">Julio</P>     
+              
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >JULIO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Whisky Sandy Mac 1L </p>
+                <p class="canasta__descripcion--p">Chandom brut 750cc</p>
+                <p class="canasta__descripcion--p">Ron Bacardi 750cc</p>
+                <p class="canasta__descripcion--p">Vino tinto tannat reserva Garzon 750cc</p>
+                <p class="canasta__descripcion--p">Vino tinto cavernet de corte Garzon 750cc</p> 
+                <p class="canasta__descripcion--p">Sidra Matriarca Roble 750cc</p>
+                <p class="canasta__descripcion--p">Mojito Mg Spirit 275cc</p>
+                <p class="canasta__descripcion--p">Vodka Smirnoff Ice 275cc</p>
+                <p class="canasta__descripcion--p">Cerveza Patagonia ipa 730cc</p>
+                <p class="canasta__descripcion--p">Pali Chips jamon 160g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas con pimiento Loreto 85g</p>
+                <p class="canasta__descripcion--p">Mani pelado Manix 160g</p>
+            </li>
         </div>
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-agosto-GlutenFree.jpg" alt="Agosto">
-             <P class="canasta__p">Agosto</P>     
+            <img class="canasta__img" src="../img/canasta-agosto-GlutenFree.jpg" alt="Agosto">    
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >AGOSTO</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Pan de frutas con castañas Jasmine 350g </p>
+                <p class="canasta__descripcion--p">Chocolate Antu Xixona negro con arandanos 100g</p>
+                <p class="canasta__descripcion--p">Turron alicante El Lobo 150g</p>
+                <p class="canasta__descripcion--p">Galletas chalitas clasicas Viavita sin gluten 100g</p>
+                <p class="canasta__descripcion--p">Galletitas Gullon con chips de chocolate 200g</p> 
+                <p class="canasta__descripcion--p">Picaditos de salame sin piel Centenario 100g</p>
+                <p class="canasta__descripcion--p">Bebida de almendras Bridge Organica sin azucar 1L</p>
+                <p class="canasta__descripcion--p">Chips de vegetales De La Tierra 120 g</p>
+                <p class="canasta__descripcion--p">Pate iberico Iberitos Pedro Ximenez 140g</p>
+                <p class="canasta__descripcion--p">Queso untable clasico Tholem 190g</p>
+                <p class="canasta__descripcion--p">Salsa allioli suave Chovi 250 cc</p>
+                <p class="canasta__descripcion--p">Nueces peladas La Abundancia 100g</p>
+                <p class="canasta__descripcion--p">Almendras peladas La Abundancia 100g</p>
+                <p class="canasta__descripcion--p">Fideo fusilli La Molisana 400g</p>
+
+            </li>
         </div>
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-setiembre.jpg" alt="Setiembre">
-             <P class="canasta__p">Setiembre</P>     
+            <img class="canasta__img" src="../img/canasta-setiembre.jpg" alt="Setiembre">   
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >SETIEMBRE</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Freixenet cordon negro brut 750cc </p>
+                <p class="canasta__descripcion--p">Vino tinto tannat de corte Garzon 750cc</p>
+                <p class="canasta__descripcion--p">Panettone Italiano Valentino 500g</p>
+                <p class="canasta__descripcion--p">Cafe soluble Nescafe descafeinado 100g</p>
+                <p class="canasta__descripcion--p">Trufas con avellanas Jacquot 200g</p> 
+                <p class="canasta__descripcion--p">Aceite de oliva Filippo Berio extra virgen 250cc</p>
+                <p class="canasta__descripcion--p">Jamon Bodega España 100g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas con pimiento Loreto 85g</p>
+                <p class="canasta__descripcion--p">Mani sin sal Pittjes 200g</p>
+                <p class="canasta__descripcion--p">Tostadas El Trigal 120g</p>
+
+            </li>
         </div>
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-octubre.jpg" alt="Octubre">
-             <P class="canasta__p">Octubre</P>     
+            <img class="canasta__img" src="../img/Canasta Octubre 2.jpg" alt="Octubre">   
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >OCTUBRE</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Pan dulce Vicenza 500g </p>
+                <p class="canasta__descripcion--p">Finca las moras souvignion blanco 1L</p>
+                <p class="canasta__descripcion--p">Whisky Johnnie Walker black label 1L</p>
+                <p class="canasta__descripcion--p">Budín suavipan 200g</p>
+                <p class="canasta__descripcion--p">Paté tulip 100g</p> 
+                <p class="canasta__descripcion--p">Mostaza bornier 300g</p>
+                <p class="canasta__descripcion--p">Muñeco de chocolate santa Claus 200g</p>
+
+            </li>
         </div>
         <div class="canasta">
-            <img class="canasta__img" src="../img/canasta-octubre.jpg" alt="Octubre">
-             <P class="canasta__p">Octubre</P>     
+            <img class="canasta__img" src="../img/canasta-noviembre.jpg" alt="Noviembre">   
         </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >NOVIEMBRE</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Whisky Johnnie Walker red label 1L</p>
+                <p class="canasta__descripcion--p">Numm extra brut 750cc</p>
+                <p class="canasta__descripcion--p">Vino tinto malbec Escorihuela Gascon 750cc</p>
+                <p class="canasta__descripcion--p">Vino blanco sauvignon blanc Garzon 750cc </p>
+                <p class="canasta__descripcion--p">Vino tinto cabernet sauvignon reserve Toscanini 750cc</p> 
+                <p class="canasta__descripcion--p">Panettone italiano Valentino 500g</p>
+                <p class="canasta__descripcion--p">Budin con frutas Portezuelo 230g</p>
+                <p class="canasta__descripcion--p">Turron español El Lobo jijona 150g</p>
+                <p class="canasta__descripcion--p">Turron español El Lobo alicante 150g</p>
+                <p class="canasta__descripcion--p">Trufas bitter classic Jacquot 200g</p>
+                <p class="canasta__descripcion--p">Te Lipton 20 sobres</p>
+                <p class="canasta__descripcion--p">Queso grana padano Zanetti 150g</p>
+                <p class="canasta__descripcion--p">Aceite de oliva Rafael Salgado extra 250cc</p>
+                <p class="canasta__descripcion--p">Atun en aceite de Calvo 160g</p>
+                <p class="canasta__descripcion--p">Mejillones en salsa vieira Dani 111g</p>
+                <p class="canasta__descripcion--p">Mostaza de dijon Maille 200g</p>
+                <p class="canasta__descripcion--p">Salsas allioli Chovi 250cc</p>
+                <p class="canasta__descripcion--p">Frutos secos Ultje 200g</p>
+                <p class="canasta__descripcion--p">Papas fritas Lays 163g</p>
+                <p class="canasta__descripcion--p">Mani con sal jumbo Ultje 200g</p>
+                <p class="canasta__descripcion--p">Champignon fileteado Emigrante 280g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas con pimiento Loreto 85g</p>
+                <p class="canasta__descripcion--p">Servilleta navideñas Elite 20un</p>
+                
+                
+            </li>
+        </div>
+        
         <div class="canasta">
             <img class="canasta__img" src="../img/canasta-diciembre.jpg" alt="Diciembre">
-             <P class="canasta__p">Diciembre</P>     
+  
+        </div>
+        <div class="canasta__descripcion">
+            <h3 class="canasta__descripcion--titulo" >DICIEMBRE</h3>
+            <li class="canasta__descripcion--li">
+                <p class="canasta__descripcion--p">Whisky Johnnie Walker black label 1L</p>
+                <p class="canasta__descripcion--p">Vino tinto tannat reserva Garzon 750cc</p>
+                <p class="canasta__descripcion--p">Ron Bacardi 750 cc</p>
+                <p class="canasta__descripcion--p">Vino rosado Brisas Del Este 750cc</p>
+                <p class="canasta__descripcion--p">Chocolate After Eight menta 400g</p> 
+                <p class="canasta__descripcion--p">Chocolate Nestle Kit Katz 125g</p>
+                <p class="canasta__descripcion--p">Turron español 1880 jijona 150g</p>
+                <p class="canasta__descripcion--p">Panettone italiano Valentino 500g</p>
+                <p class="canasta__descripcion--p">Te english breakfast Twinings 10 sobres</p>
+                <p class="canasta__descripcion--p">Jamon Bodega España 100 g</p>
+                <p class="canasta__descripcion--p"> Aceite de oliva Rafael Salgado 250cc</p>
+                <p class="canasta__descripcion--p">Pimenton dulce Carmencita 75g</p>
+                <p class="canasta__descripcion--p">Mostaza de dijo Maille 215g</p>
+                <p class="canasta__descripcion--p">Salsa allioli Chovi 250cc</p>
+                <p class="canasta__descripcion--p">Papas fritas Lays stax original 163g</p>
+                <p class="canasta__descripcion--p">Castañas de caju La Abundancia 100g</p>
+                <p class="canasta__descripcion--p">Mani jumbo Ultje 200g</p>
+                <p class="canasta__descripcion--p">Nueces peladas Rio De La Plata 100g</p>
+                <p class="canasta__descripcion--p">Aceitunas rellenas con pimiento Loreto 85g</p> 
+                <p class="canasta__descripcion--p">Pate de higado Tulip 125g</p>
+                <p class="canasta__descripcion--p">Cebollitas en vinagre Delicias 250g</p>
+                <p class="canasta__descripcion--p">Servilletas navideñas Elite 20un</p>
+
+            </li>
         </div>
     </main>
 
@@ -109,6 +318,10 @@
         
         
         </footer>
+        <script>
+            AOS.init();
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>
