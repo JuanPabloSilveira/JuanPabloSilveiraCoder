@@ -88,17 +88,51 @@ justify-content: flex-end;
 
 /* Main Tienda*/
 
-.main__tienda{ 
+
+.tienda__conten{ 
     display: grid;
-    grid-template-columns: 50% 30%;
+   
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fill, minmax (150px, 1fr));
+   
     justify-content: space-around;
     
 
 }
 
+.tienda__h1 {
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: red;
+}
+.canasta{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: flex;
+    justify-content: center;
+}
+.canasta__descripcion{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 .canasta__img{
-    width: 500px;
-    height: 500px;
+    width: 250px;
+    height: 250px;
 }
 .canasta__descripcion--titulo{
     
@@ -109,15 +143,82 @@ justify-content: flex-end;
     list-style: none;
 }
 
-/*Main Contacto*/
-.main__contacto{
-    padding: 1.5em;
+/*Main Cotizar*/
+
+.cotizar__conten{
     box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
-    margin: 6rem;
-    max-width: 800px;
+    margin:1rem 1rem ;
+    width:auto;
     padding: 1.5rem;
     display: grid;
-    grid-template-columns: 60% 40%
+    grid-template-columns: 60% 40%;
+    background-color: #ffde59;
+    
+
+}
+
+.main__cotizar--inp{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+}
+.main__cotizar--btn{
+    background: tomato;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.7em;
+    width: 100%;
+
+
+}
+.cotizar__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__cotizar--logo{
+    width: 20rem;
+    
+}
+
+/*Main Nosotros*/
+
+.nosotros{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #ffde59;
+    
+
+}
+
+.nosotros__logo{
+    width: 40%;
+}
+.main__nosotros--logo{
+    width: auto;
+}
+/*Main Contacto*/
+
+.main__contacto{
+ 
+
+}
+.contacto__conten{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #ffde59;
+    
 
 }
 
@@ -138,9 +239,14 @@ justify-content: flex-end;
 
 
 }
-
+.contacto__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .main__contacto--logo{
     width: 20rem;
+    
 }
 /*Footer*/
 .footer{
@@ -180,11 +286,10 @@ align-items: flex-end;
 @media screen and ( max-width: 768px ) { /*tablet*/
     
     /*Main Contacto*/
-.main__contacto{
-    padding: 1.5em;
+.contacto__conten{
     box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
     margin: 1rem;
-    max-width: 800px;
+    max-width: 800pxauto;
     padding: 1.5rem;
     display: grid;
     grid-template-columns: 80 20;
@@ -218,13 +323,13 @@ align-items: flex-end;
 }
 
 /*Tienda*/
-.main__tienda{ 
+/*.main__tienda{ 
     display: grid;
     grid-template-columns:auto;
     justify-content: stretch;
     
 
-}
+}*/
 
 .canasta__img{
     width: 300px;
@@ -236,8 +341,7 @@ align-items: flex-end;
 }
 
 /*Main Contacto*/
-.main__contacto{
-    padding: 1.5em;
+.contacto__conten{
     box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
     margin: 1rem;
     max-width: 800px;
