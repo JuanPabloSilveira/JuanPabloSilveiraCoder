@@ -86,7 +86,7 @@ justify-content: flex-end;
     
 }
 
-/* Main Tienda*/
+/* Main CATALOGO*/
 
 
 .tienda__conten{ 
@@ -319,7 +319,7 @@ align-items: flex-end;
   
 }
 
-/*Tienda*/
+/*CATALOGO*/
 /*.main__tienda{ 
     display: grid;
     grid-template-columns:auto;
