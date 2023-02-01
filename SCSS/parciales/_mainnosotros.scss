@@ -1,0 +1,20 @@
+/*Main Nosotros*/
+
+.nosotros{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #ffde59;
+    
+
+}
+
+.nosotros__logo{
+    width: 40%;
+}
+.main__nosotros--logo{
+    width: auto;
+}

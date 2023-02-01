@@ -1,0 +1,76 @@
+/*Media Queries - Estilos moviles*/
+
+@media screen and ( max-width: 1024px ) { /*desktop*/
+    
+}
+
+@media screen and ( max-width: 768px ) { /*tablet*/
+    
+    /*Main Contacto*/
+.contacto__conten{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin: 1rem;
+    max-width: 800pxauto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 80 20;
+    
+
+}
+}
+@media screen and ( max-width: 425px ) { /*movil*/
+  /*Index*/
+    .menu__ul{
+        display: flex;
+        flex-direction: rows;
+        gap: 10px;
+        padding: 1rem 3rem;
+        list-style: none;
+        
+    
+    }
+
+    .Social__ul{
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 1rem;
+      
+    
+}
+.Direccion{
+    width: 80%;
+  
+}
+
+/*CATALOGO*/
+/*.main__tienda{ 
+    display: grid;
+    grid-template-columns:auto;
+    justify-content: stretch;
+    
+
+}*/
+
+.canasta__img{
+    width: 300px;
+    height: 300px;
+}
+
+.canasta__descripcion--li{
+    list-style: none;
+}
+
+/*Main Contacto*/
+.contacto__conten{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin: 1rem;
+    max-width: 800px;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto;
+
+}
+}
+/*max-width: hasta
+min-width: desde*/

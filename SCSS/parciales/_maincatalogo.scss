@@ -1,0 +1,56 @@
+/* Main CATALOGO*/
+
+
+.tienda__conten{ 
+    display: grid;
+   
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fill, minmax (150px, 1fr));
+   
+    justify-content: space-around;
+    
+
+}
+
+.tienda__h1 {
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: grid;
+    grid-template-columns: 1fr;
+    color: red;
+}
+.canasta{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: flex;
+    justify-content: center;
+}
+.canasta__descripcion{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    background-color: #ffde59;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+.canasta__img{
+    width: 250px;
+    height: 250px;
+}
+.canasta__descripcion--titulo{
+    
+    list-style: none;
+
+}
+.canasta__descripcion--li{
+    list-style: none;
+}

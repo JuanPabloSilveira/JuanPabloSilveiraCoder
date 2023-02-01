@@ -1,0 +1,41 @@
+/*Main Contacto*/
+
+
+.contacto__conten{
+    box-shadow: 0 0 10px 0 rgba(250, 4, 4, 0.808);
+    margin:1rem 1rem ;
+    width:auto;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: #ffde59;
+    
+
+}
+
+.main__contacto--inp{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    background: none;
+    border-bottom: 1px solid red;
+}
+.main__contacto--btn{
+    background: tomato;
+    border: 0;
+    text-transform: uppercase;
+    padding: 0.7em;
+    width: 100%;
+
+
+}
+.contacto__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__contacto--logo{
+    width: 20rem;
+    
+}

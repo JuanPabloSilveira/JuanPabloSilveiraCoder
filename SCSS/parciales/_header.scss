@@ -1,0 +1,44 @@
+/*Header*/
+
+.header{
+    background-color: #ffde59;
+    
+}
+
+.header__logo--img{
+    width: 140px;
+ 
+}
+
+.navbar{
+display: flex;
+
+
+}
+.nav-item{
+display: flex;
+justify-content: flex-end;
+}
+
+.menu__nav{
+    background-color: #ffde59;
+    display: flex;
+    flex-direction: row-reverse;
+
+ 
+ 
+}
+.menu__ul{
+    display: flex;
+    flex-direction: rows;
+    gap: 50px;
+    padding: 0.2rem 5rem;
+    list-style: none;
+    
+
+}
+
+.menu__anchor{
+    text-decoration: none;
+    color: black;
+}

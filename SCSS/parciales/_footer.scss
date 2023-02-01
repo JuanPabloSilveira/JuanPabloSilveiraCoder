@@ -1,0 +1,28 @@
+/*Footer*/
+.footer{
+    background-color: #ffde59;
+    display: flex;
+    justify-content: space-between;
+   padding: 0.5rem;
+    
+}
+
+.Social__ul{
+    display: flex;
+    list-style: none;
+    gap: 10rem;
+    padding: 2rem;
+    width: 70%;
+align-items: flex-end;
+}
+
+.Social__anchor--img{
+    display:flex;
+    width: 50px;
+    list-style: none;
+   
+}
+
+.Direccion{
+    width: 30%;
+}
