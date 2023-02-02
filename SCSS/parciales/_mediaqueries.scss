@@ -30,18 +30,20 @@
     
     }
 
+    /*Footer*/
+
     .Social__ul{
         display: flex;
         list-style: none;
         gap: 1rem;
         padding: 1rem;
-      
-    
-}
-.Direccion{
-    width: 80%;
+    }
+     .Direccion{
+        width: 80%;
+        display: flex;
+        flex-direction:column
   
-}
+    }
 
 /*CATALOGO*/
 /*.main__tienda{ 
