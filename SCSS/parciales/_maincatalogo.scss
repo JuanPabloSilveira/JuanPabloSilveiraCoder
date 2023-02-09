@@ -18,7 +18,7 @@
     margin:1rem 1rem ;
     width:auto;
     padding: 1.5rem;
-    background-color: #ffde59;
+    background-color: $amarlogo;
     display: grid;
     grid-template-columns: 1fr;
     color: red;
@@ -28,7 +28,7 @@
     margin:1rem 1rem ;
     width:auto;
     padding: 1.5rem;
-    background-color: #ffde59;
+    background-color: $amarlogo;
     display: flex;
     justify-content: center;
 }
@@ -37,7 +37,7 @@
     margin:1rem 1rem ;
     width:auto;
     padding: 1.5rem;
-    background-color: #ffde59;
+    background-color:$amarlogo;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
