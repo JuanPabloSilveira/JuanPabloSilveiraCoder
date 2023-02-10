@@ -328,7 +328,8 @@ align-items: flex-end;
 
 /*Media Queries - Estilos moviles*/
 
-@media screen and ( min-width: 2560px ) { /*desktop*/
+
+@media screen and ( min-width: 1440px ) { /*desktop*/
     
     .banner__subtitulo{
         width: auto;
@@ -336,7 +337,7 @@ align-items: flex-end;
         position: absolute;
         left: 60%;
         top: 5%;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         color: red;
     
@@ -347,14 +348,14 @@ align-items: flex-end;
      
     .banner__subtitulo2{
         width: auto;
-        height: 5rem;
+        height: 4rem;
         Position: absolute;
         left: 3%;
         top: 80%;
         color: black;
         background-color: #ffde59;
         border-radius: 1rem;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
         
     
@@ -362,6 +363,7 @@ align-items: flex-end;
     
     }
 }
+
 
 @media screen and ( max-width: 1024px ) { /*desktop*/
     
