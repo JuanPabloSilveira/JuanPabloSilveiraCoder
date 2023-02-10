@@ -18,7 +18,7 @@
 
 }
 }
-/*@media screen and ( max-width: 425px ) { /*movil*/
+@media screen and ( max-width: 425px ) { /*movil*/
   /*Index*/
     .menu__ul{
         display: flex;
@@ -124,14 +124,3 @@ width: 80%;
 }
 /*max-width: hasta
 min-width: desde*/
-
-@mixin mobile {
-
-  @media screen and ( max-width: 425px ) {
-
-@content;
-
-
-  }
-
-}
